@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+.App{
+  background: url('https://th.bing.com/th/id/OIP.4W9GO4RJ8wQ0l38TRuR7bAHaE8?rs=1&pid=ImgDetMain');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+h1{
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  text-decoration: underline;
+  color: rgba(2, 125, 207, 0.829);
+  text-shadow: 4px 4px 3px rgb(83, 83, 83);
+}
+h1 img{
+  border-radius: 50%;
+  width: 3%;
+}
