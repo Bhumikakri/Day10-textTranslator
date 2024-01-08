@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import './main.css';
 import LanguageSelect from "./Language";
 import TextArea from "./TextArea";
 
@@ -25,7 +26,8 @@ const Main = () => {
         {
           headers: {
             "content-type": "application/x-www-form-urlencoded",
-            "X-RapidAPI-Key": "382a6d837dmsh3673b78e742714bp186656jsndf23804edbc1",
+            "X-RapidAPI-Key":
+              "382a6d837dmsh3673b78e742714bp186656jsndf23804edbc1",
             "X-RapidAPI-Host": "text-translator2.p.rapidapi.com",
           },
         }
@@ -48,22 +50,53 @@ const Main = () => {
     { label: "Arabic", value: "ar" },
     { label: "Hindi", value: "hi" },
     { label: "Russian", value: "ru" },
-    
+    { label: "Polish", value: "pl" },
+    { label: "Portuguese", value: "pt" },
+    { label: "Punjabi", value: "pa" },
+    { label: "Romanian", value: "ro" },
+    { label: "Russian", value: "ru" },
+    { label: "Samoan", value: "sm" },
+    { label: "Scots Gaelic", value: "gd" },
+    { label: "Serbian", value: "sr" },
+    { label: "Sesotho", value: "st" },
+    { label: "Shona", value: "sn" },
+    { label: "Sindhi ", value: "sd" },
+    { label: "Sinhala ", value: "si" },
+    { label: "Slovak", value: "sk" },
+    { label: "Slovenian", value: "sl" },
+    { label: "Somali", value: "so" },
+    { label: "Spanish", value: "es" },
+    { label: "Sundanese", value: "su" },
+    { label: "Swahili", value: "sw" },
+    { label: "Swedish", value: "sv" },
+    { label: "Tajik", value: "tg" },
+    { label: "Tamil", value: "ta" },
+    { label: "Tatar", value: "tt" },
+    { label: "Telugu ", value: "te" },
+    { label: "Thai", value: "th" },
+    { label: "Turkish", value: "tr" },
+    { label: "Turkmen", value: "tk" },
+    { label: "Ukrainian", value: "uk" },
+    { label: "Urdu", value: "ur" },
+    { label: "Uyghur", value: "ug" },
+    { label: "Uzbek", value: "uz" },
+    { label: "Vietnamese", value: "vi" },
+    { label: "Welsh", value: "cy" },
   ];
 
   return (
-    <div>
-      <div>
+    <div className="Main">
+      <div className="InputText">
         <LanguageSelect
           value={inputSelectType}
-          onChange={(e)=>setInputSelectType(e.target.value)}
+          onChange={(e) => setInputSelectType(e.target.value)}
           options={languageOptions}
         />
         <TextArea value={textInput} onChange={handleInputChange} />
       </div>
       <button onClick={translateText}>Translate</button>
 
-      <div>
+      <div className="outputText">
         <LanguageSelect
           value={outputType}
           onChange={handleOutputSelectChange}

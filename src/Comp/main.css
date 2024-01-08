@@ -1,0 +1,58 @@
+.Main{
+    max-width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding-top: 4rem;
+}
+.InputText,.outputText{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+select{
+    width: 100%;
+    height: 10%;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 0.4rem;
+    background-color: rgb(100, 161, 252);
+    font-size: 1.1rem;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(2, 29, 31);
+    border-radius: 10px;
+}
+textarea{
+    width: 100%;
+    height:50% ;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(4, 20, 61, 0.582);
+    box-shadow: 2px 3px 4px rgb(58, 57, 57);
+}
+button{
+    margin-top: 12rem;
+    font-size: 1.5rem;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: rgb(4, 35, 61);
+}
+button:hover{
+    color: rgb(4, 35, 61);
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 2px 5px 6px rgb(12, 12, 12);
+    border: 1px solid rgb(4, 35, 61);
+}
